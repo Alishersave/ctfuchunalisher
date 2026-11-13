@@ -1,0 +1,664 @@
+Cryptography
+
+1)
+Easy
+Cryptography
+MD5 siri
+Tavsif
+Sizga berilgan fayl dan haqiqiy flagni toping.
+Flag formati HackNow{md5_cipher}
+
+Yuklamalar
+hacknow_flags.txt
+HackNow{8b5e3d09558f38a9ea48869564838b5e}
+
+grep -E -o '\b[a-fA-F0-9]{32}\b' hacknow_flags.txt 			script orqali yechildi md5 32 bitli 0-9 a-f A-F gacha bolgan belgilardan foydalanadi,bu uning ajralib turuvchi jihatlari.
+
+
+2)
+Easy
+Cryptography
+Oshpazni masallig'i
+23 avg 2025
+Ball
++100
+Tavsif
+Har bir kryptografni oshpazga ishi tushadi....
+
+Flag format: HackNow{}
+
+Yuklamalar
+wt-easy-crypto-1.txt     
+HackNow{easy-hn-wt-1}
+
+https://gchq.github.io/CyberChef/#input=U0dGamEwNXZkM3RsWVhONUxXaHVMWGQwTFRGOQ		9FTL0dXLuhWL5NXYlt3dv50ajFGS	korinishidagi base64 shifr qiymati berilgan uni teskarisiga ogirib [::-1] qilib keyin base 64 da decode qilish kk.
+
+
+3)
+Easy
+Cryptography
+Yechilgan
+GZ: Hash Cracker — Parol Buzish
+26 apr 2026
+Ball
++120
+ Hash Cracker
+DB dan olingan MD5 hashlar:
+
+Output
+
+⎘
+Nusxa
+admin:   5f4dcc3b5aa765d61d8327deb882cf99
+alice:   e10adc3949ba59abbe56e057f20f883e
+bob:     827ccb0eea8a706c4c34a16891f84e7b
+
+admin=HN{password}  , alice=HN{123456}  ,  bob=HN{12345}   ,   Charlie=HN{qwerty}
+
+https://crackstation.net/ 	saytidan buzildi md5 hash qiymtlar berilgan saytdagi wordlistda yozilgan hash qiymatlarning qiymatlarini bizga qaytaradi,shu tariqa hesh qiymat buziladi.
+
+
+4)
+Reading Mode ON
+Easy
+Cryptography
+Haqiqatni top!
+27 iyun 2025
+Ball
++100
+
+
+
+
+
+
+
+
+
+
+
+
+5)
+Easy
+Cryptography
+Yechilgan
+GZ: TLS Auditor — HTTPS Zaifliklarni Aniqlash
+26 apr 2026
+Ball
++100
+ TLS Auditor
+nmap --script ssl-enum-ciphers natijalari:
+
+Output
+
+⎘
+Nusxa
+SSLv3:  ENABLED ❌
+TLSv1.0: ENABLED ⚠️
+TLSv1.2: ENABLED ✅
+
+Ciphers:
+  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 ✅
+  TLS_RSA_WITH_3DES_EDE_CBC_SHA ⚠️ (SWEET32)
+  TLS_RSA_WITH_RC4_128_SHA ❌
+  TLS_RSA_WITH_NULL_SHA ❌ (!!)
+
+Cert: Self-signed, Expired 2024-01-01
+HSTS: absent ❌
+
+HN{sslv3} 	, 	HN{shifrlash_yoq}	,	HN{muddati_otgan}	,	HN{TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384}
+
+
+6)
+Easy
+Cryptography
+Inoq do'stlar
+20 dek 2025
+Ball
++100
+
+
+
+
+
+
+
+
+
+7)
+Easy
+Cryptography
+Yechilgan
+GZ: PKI Detektiv — Sertifikat Tahlili
+26 apr 2026
+Ball
++80
+
+
+8)
+Easy
+Cryptography
+Egri yo'llar
+20 dek 2025
+Ball
++100
+
+
+
+
+
+
+
+
+9)
+Easy
+Cryptography
+Man
+20 dek 2025
+Ball
++100
+
+
+
+
+
+
+
+
+10)
+Easy
+Cryptography
+Repeater
+Tavsif
+We found an encrypted message.
+
+The developer said it is "super secure XOR encryption".
+
+Can you recover the original flag?
+
+cipher:
+08 3c 31 22 26 2f 39392f382c76310b347024752220772d331928673f1c65351c3a76370b3570373331673b
+
+Khwarizmi{x0r_r3p3at1ng_k3y_1s_n0t_s3cur3}   
+
+https://gchq.github.io/CyberChef/ 		saytidan yechildi , dastlab kalitni toppish kerak uning uchun C va P larni xor qilish kerak keyin kalit takrorlanib chiqadi CTFCTF bolib . P=Khwarizmi{ shundan bilib olsak boladi. Xor qilish tartibi-agar Khwarizmi korinishidagi belgilar ascii jadvalidan xeh qiymati aniqlanadi va binary otkaziladi, hex formatda turgan C ham binaryga otkazilib xor qilinadi natija binary-> xeh-> string va CTF chiqib keladi keyin kalitni qollab P toliq topib olinadi.
+
+11)
+Easy
+Cryptography
+Yechilgan
+Kodlash Zanjiri: Hex + Base64
+5 iyul 2026
+Ball
++200
+#Vaziyat
+Quyidagi satr ikki qatlam kodlangan. Tashqi qatlam base64, ichidan hex chiqadi.
+
+Ma'lumot
+
+⎘
+Nusxa
+NDg0ZTdiNjgzMzc4NWYzNDZlNjQ1ZjYyMzQ3MzMzMzYzNDVmNjM2ODM0MzE2ZTdk
+Ikkala qatlamni oching. Flag: HN{...}
+
+HN{h3x_4nd_b4s364_ch41n}   cyberchef dan yechildi
+
+12)
+Easy
+Cryptography
+Yechilgan
+GZ: Kriptografiya asoslari — Hash va Shifrlash
+26 apr 2026
+Ball
++100
+
+
+13)
+Easy
+Cryptography
+Greppper
+20 dek 2025
+Ball
++100
+
+
+
+
+
+
+
+
+14)
+Easy
+Cryptography
+RSA: Sizib Chiqqan Kalitlar
+5 iyul 2026
+Mavsum XP
++100
+Birinchi Bo'ron
+Tavsif
+#Vaziyat
+Bir kompaniyaning ichki xabar almashinuvi RSA bilan himoyalangan. Xavfsizlik auditi paytida ma'lum bo'ldiki, ikkita maxfiy tub son (p va q) noto'g'ri saqlanib sizib chiqqan. Endi shifrlangan xabarni ochish mumkin.
+
+#Berilganlar
+Ma'lumot
+
+⎘
+Nusxa
+p = 256540639545420580481010914733866776789
+q = 295990755061318156032843578349068899477
+e = 65537
+n = 75933657602962493373524264649493297733625594277891171111654071156469437839353
+c = 23060690411158180722756581634247679923992149314416604219932030977620937655414
+
+HN{rs4_pr1v4t3_k3y_r3c0v3r3d}
+
+https://www.dcode.fr/rsa-cipher				saytidan yechildi rsa uchun barcha malumot berilgan shunchaki decode qilindi
+
+
+15)
+Easy
+Cryptography
+Virus
+20 dek 2025
+Ball
++100
+Tavsif
+Hesh : c0b3b9f31937ce17bc303709853b5634
+Heshni tahlil qiling, asl package name’ni aniqlang va faqat flag ko‘rinishida yuboring.
+
+
+
+
+
+
+
+
+16)
+Easy
+Cryptography
+Bugun
+29 may 2026
+Ball
++100
+Tavsif
+You are given 3 plaintext-ciphertext pairs and a 4th ciphertext to decrypt.
+Find the pattern and recover the plaintext.
+
+Manba Turansec.uz CyberHackConf-2026
+
+Yuklamalar
+crypto.txt
+1. C: uzag_bvquh_ejkq_72lj 	har bitta pazitsiyada 4 ga oshgan natijada -1 -5 -9..
+   P: turt_karra_turt_19ga
+
+2. C: vgo_unhkw_tem_45ro_kykg		har bitta pazitsiyada 3 ga oshgan natijada  -1 -4 -7 
+   P: uch_karra_uch_11ga_teng
+
+3. C: jnpp_tlegr_bfhh_uhsn_40		har bitta pazitsiyada 2 ga oshgan natijada  	-1 -3 -5 
+   P: ikki_karra_ikki_teng_5
+
+4. C: g5yv9ru9wq_11j14fv17_bmg21y26  		 har bitta pazitsiyada 1 ga oshgan natijada 	-1 -2 -3 -4...  g-1=   5-2   y-3...
+   P: ?
+
+progressiv (pozitsiyaga bog'liq) Sezar shifri ishlatilgan, farqi shundaki — endi raqamlar ham harflar kabi siljitilgan (harflar mod 26, raqamlar esa mod 10 bo'yicha).
+	
+f3vr4ln1ng_0x1rg1_kun1d4  buni yechish uchun anir bir sayt topa olmadim shu sababli qogozda yechdim .
+
+
+17)
+Easy
+Cryptography
+Yechilgan
+Simmetrik XOR: Ulushli Kalit
+5 iyul 2026
+Mavsum XP
++100
+Birinchi Bo'ron
+Tavsif
+#Vaziyat
+Ikki xodim maxfiy xabar almashish uchun simmetrik shifrlash ishlatishdi: bir xil maxfiy kalit bilan ham shifrlash, ham ochish bajariladi (asimmetrikdan farqi — u yerda ochiq/maxfiy kalit JUFTLIGI bo'lardi). Kalit oldindan kelishilgan.
+
+#Berilganlar
+Shifrlangan xabar (hex):
+
+Ma'lumot
+
+⎘
+Nusxa
+067f353970235c7d3e337f5a1132713c6e257e2d7f4533
+Ulushli (shared) kalit, takroriy: N1NJA
+
+#Vazifa
+Har bir baytni kalit baytlari bilan (takroriy) XOR qilib xabarni oching.
+
+Flag formati: HN{...}
+
+HN{s1mm3tr1k_x0r_k4l1t}			https://gchq.github.io/CyberChef/#recipe=From_Hex('Auto')XOR(%7B'option':'Latin1','string':'N1NJA'%7D,'Standard',false)&input=MDY3ZjM1Mzk3MDIzNWM3ZDNlMzM3ZjVhMTEzMjcxM2M2ZTI1N2UyZDdmNDUzMw&oeol=VT
+
+
+
+18)
+Easy
+Cryptography
+ROT47 + Base64
+5 iyul 2026
+Ball
++200
+Tavsif
+#Vaziyat
+Quyidagi satr base64 bilan kodlangan, ostida ROT47 (barcha ASCII belgilarni 47 pozitsiyaga siljitadi) shifri bor.
+
+Ma'lumot
+
+⎘
+Nusxa
+d31MQ19FY2YwMj81MDNjRGIwPWNKYkNETg==
+Avval base64, so'ng ROT47. Flag: HN{...}
+
+
+HN{r0t47_and_b4s3_l4y3rs}	https://gchq.github.io/CyberChef/ 		
+
+
+19)
+Easy
+Cryptography
+PoC: Zaiflikni Aniqlash
+5 iyul 2026
+Ball
++200
+
+
+
+
+
+
+20)
+Cryptography
+Yechilgan
+G'alati matn
+20 dek 2025
+Ball
++100
+Sizga elektron pochtangizdan g'alati matn keldi. Lekin u o'qib bo'lmaydigan darajada yozilgan. Siz uni to'g'irlay olasizmi ?
+
+Format: HackNow{}
+
+Yuklamalar
+matn.txt	Non sob'ra Ajwarm of Psvartapbrims, led PMF ajwarm. Im't Sobr fulg: ClphEon{f0bed_1mt_s0br_fu4g_f0r_kb1w_m4th} Ralds mo clph go oe nimc clpheon.by. Good Ubph For eajm pcluulegat :)
+
+
+
+HackNow{f0und_1ts_y0ur_fl4g_f0r_zu1p_t4sk}		https://quipqiup.com/
+
+
+22)
+Easy
+Cryptography
+Ikki Qatlam: Kodlangan Xabar
+5 iyul 2026
+Ball
++200
+Tavsif
+#Vaziyat
+Tarmoq monitoringi jamoasi shubhali trafikdan bitta satrni tutib oldi. Tahlil shuni ko'rsatdiki, xabar ikki qatlam oddiy kodlashdan o'tgan — bu yerda hech qanday maxfiy kalit yo'q, faqat ma'lumotni yashirish uchun ishlatilgan keng tarqalgan kodlash usullari.
+
+#Tutib olingan satr
+Ma'lumot
+
+⎘
+Nusxa
+VUF7RTBHX0lOX080RjNfSEZHTkYxfQ==
+
+HN{R0T_VA_B4S3_USTAS1}			https://gchq.github.io/CyberChef/   from base64 from rot13
+
+
+23)
+21)
+Easy
+Cryptography
+PoC: Zaiflikni Aniqlash
+5 iyul 2026
+Ball
++200
+
+
+
+
+
+
+
+24)
+Easy
+Cryptography
+Yechilgan
+Sertifikat Inspektori
+7 iyul 2026
+Ball
++80
+
+HN{PKI_m4st3r}	,	HN{c3rt_aud1t0r}	,	HN{PKI_m4st3r_c3rt_aud1t0r}
+
+
+25)
+Easy
+Cryptography
+Yechilgan
+OSINT: Git Tarixidagi Sirlar
+5 iyul 2026
+Ball
++200
+
+HN{g1t_h1st0ry_l34k}
+
+
+
+26)
+Easy
+Cryptography
+Bir-Bayt XOR: Kalitsiz
+5 iyul 2026
+Ball
++200
+Tavsif
+#Vaziyat
+Klassik crypto-CTF mashqi: quyidagi xabar bitta bayt bilan XOR qilingan (single-byte XOR). Kalit noma'lum, lekin atigi 256 ta variant bor.
+
+#Berilganlar
+Shifrlangan xabar (hex):
+
+Ma'lumot
+
+⎘
+Nusxa
+1412272f6d323b306f033e6825280324332e033f283a21
+
+HN{s1ngl3_b4yt_xor_ctf}		https://gchq.github.io/CyberChef/   XOR brute force orqali single byte bu =5c
+
+
+27)
+Easy
+Cryptography
+Double Layer Secret
+30 avg 2026
+Ball
++100
+Tavsif
+HN kompaniyasi serveridan shubhali satr topildi. Xakerlar maxfiy ma'lumotni yashirish uchun ikki bosqichli kodlash usulidan foydalanishgan.
+
+Ushbu satrni dekod qiling va yashirin flagni toping:
+
+Data: U0U1N1ltRnpaVFkwWDJSbFkyOWtaVjl0WVhOMFpYSjlDZz09Cg==
+
+Flag formati: HN{...}
+
+Maslahat: Maslahat: Satr oxiridagi belgilarga va tuzilishiga e'tibor bering. Bu standart Base64 kodlashi. Bir marta dekod qilish yetarli bo'lmasligi mumkin.
+
+HN{base64_decode_master}		https://gchq.github.io/CyberChef/ double decode from base 64
+
+
+
+
+28)
+
+29)
+
+
+
+
+30)
+Medium
+Cryptography
+RSA
+25 noy 2025
+Ball
++150
+RSA ni encrypt qila olasizmi?
+
+Format: HackNow{}
+
+Yuklamalar
+ciphertext.txt
+
+
+
+
+
+
+
+
+31)
+32)
+33)
+34)
+
+
+35)
+Medium
+Cryptography
+Dynastic
+18 mar 2026
+Ball
++150
+Tavsif
+Flag Format HackNow{} :)
+
+DJF_CTA_SWYH_NPDKK_MBZ_QPHTIGPMZY_KRZSQE?
+
+HackNow{DID_YOU_KNOW_ABOUT_THE_TRITHEMIUS_CIPHER?}    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+														HARD TYPE
+Hard
+Cryptography
+Yechilgan
+GZ: RSA Hujumlari — Yaqin Tub Sonlar va Broadcast Zaifligi
+3 iyul 2026
+Ball
++500
+HN{cl0s3_pr1m3s_l34k_rsa_s3cr3t}   ,   		HN{h4st4d_br04dcast_x3_cub3_r00t_att4ck_n0_padd1ng}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hard
+Cryptography
+Alochi do'stlar
+1 sen 2025
+Ball
++200
+Tavsif
+Mikro va Ninja universitetda birga o'qishadi ammo bir biri bilan ko'rishib suhbatlasha olishmaydi va ularga universitetdagi bazi qoidalar yoqmaydi. Bir kuni ular universitet qoidalarini jazolashni niyat qilishdi . Ular buning uchun reja tuzib olishlari kerak edi. Yuzma yuz ko'risha olishmagandan so'ng ular xatda o'z fikrlarini bayon qila boshlashdi va albatta xavfsiz xolatda. Ular matematikada o'qishiga qaramasdan ularining oddiy shifrlash usullaridan habari bor edi va ular o'zlari oddiy shifrlash amallarini qo'llagan holda shifrlash algoritmi tuzib shu bo'yicha suhbatlash boshlashdi . Zamdekanning ayg'oqchilari bundan xabar topib ularning xatini tushunishga kirishdi. Ammo undan avval u ularning shifrlash algoritmini buzishi kerak edi :) . Zamdekan bu masalada mutaxasiss bo'lmaganligi sababli u sizdan yordam so'radi . Qani siz yordam bera olasizmi ?
+
+Shifrmatn : GyzgIip{E2agc_Nzo_X4vqg_Nw_Qqu_Hzah3m}
+
+["HINT":"Qiyin ko'ringan barcha narsalar ham ko'ringanidek qiyin emas shunchaki soddaroq o'ylash kerak :)"]
+
+HackNow{M1kro_And_N1nja_Is_Not_Hack3r}   	Bu oddiy Sezar (Caesar) shifriga o'xshaydi, lekin farqi shundaki — siljish (shift) doim bir xil emas, har bir harf bilan birga o'sib boradi. Bu klassik kriptografiyada "progressiv Sezar shifri" (Trithemius shifri) deb ataladi — ya'ni: birinchi harf 1 ta, ikkinchi harf 2 ta, uchinchi harf 3 ta... siljigan hatto raqamlar ham siljiydi 0-9 gacha oraliqda.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

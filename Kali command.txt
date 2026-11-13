@@ -1,0 +1,124 @@
+grep -ow '4625' fayl.txt | wc -l					Fayl ichidan 4625 nechta marta takrorlanganini aniqlab beradi
+
+
+curl -s ipinfo.io/113.161.192.227/json					ip manzil berilgan bolsa qaysi qaysi davlatga tegishli ekanini aniqlab beradi
+curl -s http://ip-api.com/line/113.161.192.227?fields=country,city,isp	
+
+
+strings -n 4 queen.img | grep HackNow  					queen nomli rasmni stringga otkazadi va 4 ta belgidan katta bolganlarini saralab alohida oladi va oshalarning ichidan Hacknow deb boshlanuvchi sozlarni qidiradi.   
+
+strings -a queen.img > matn.txt						queen.img ni string ga otkazadi va matn.txt fayli ichiga saqlaydi.
+
+
+127.0.0.1 | ls -la /							injection hujumi uchun ping oynasidan beriladigan va ichkaridagi papkalarni korsatadigan buyruq  server ip yoziladi
+
+; cat /flag.txt                       					sever ichidagi flag.txt faylini ichini ochib beradigan buyruq
+
+(' OR '1'='1' -- )							serverga admin sifatida kirish (-- dan keyin bitta bosh joy bolishi kerak)
+
+========================================================================================================================
+BUYRUQ / MISOL                                                            VAZIFASI / TAVSIFI
+========================================================================================================================
+
+--- MATN VA QIDIRUV (GREP, STRINGS, WC) ---
+grep -ow '4625' fayl.txt | wc -l                                          Fayl ichida '4625' soʻzi necha marta tamomila mos kelib takrorlanganini sanaydi
+
+grep -rn "FLAG{" /var/log/                                                Papka va barcha ost-papkalardagi fayllardan "FLAG{" iborasini qator raqami bilan qidiradi
+
+grep -i "password" fayl.txt                                               Katta-kichik harflarga e'tibor bermasdan "password" so'zini qidiradi
+
+strings -n 4 queen.img | grep HackNow                                     Fayldan kamida 4 belgidan iborat matnlarni ajratadi va 'HackNow' qatorini qidiradi
+
+strings -a queen.img > matn.txt                                           Fayldagi barcha o'qiladigan matnlarni ajratib, matn.txt fayliga saqlaydi
+
+wc -l fayl.txt                                                            Fayldagi umumiy qatorlar sonini ko'rsatadi
+
+sort fayl.txt | uniq -c | sort -nr                                        Fayldagi takrorlangan qatorlarni guruhlab, eng ko'p uchraganini yuqoriga saralaydi
+
+
+
+
+
+--- TARMOG' VA IP MANZIL (CURL, NETWORK) ---
+curl -s ipinfo.io/113.161.192.227/json                                    IP manzil haqidagi barcha ma'lumotlarni JSON formatida chiqaradi
+
+curl -s http://ip-api.com/line/113.161.192.227?fields=country,city,isp   IP manzilning davlati, shahri va provayderini sodda matn ko'rinishida beradi
+
+curl -I https://example.com                                               Veb-saytning faqat HTTP sarlavhalarini (headers) ko'rsatadi
+
+ping -c 4 8.8.8.8                                                         Serverga 4 marotaba so'rov yuborib tarmoq aloqasini tekshiradi
+
+netstat -tuln                                                             Tizimda tinglanayotgan ochiq tarmoq portlarini ko'rsatadi
+
+
+
+
+--- FAYL VA DISK BILAN ISHLASH (FIND, DD, DISK) ---
+find / -name "secret.txt" 2>/dev/null                                     Butun tizim bo'ylab 'secret.txt' faylini xatoliklarni yashirgan holda qidiradi
+
+find . -type f -size +100M                                                Joriy papkadan hajmi 100MB dan katta bo'lgan fayllarni topadi
+
+dd if=/dev/sdb of=disk.img bs=4M status=progress                          Fleshka yoki diskdan to'liq zaxira nusxa (image) oladi
+
+file queen.img                                                            Faylning haqiqiy formatini (bosh sarlavhasiga qarab) aniqlaydi
+
+md5sum fayl.txt                                                           Faylning MD5 xesh (hash) qiymatini hisoblaydi
+
+
+
+
+--- JARAYONLAR VA TIZIM (PROCESSES, MEMORY) ---
+ps aux | grep python                                                      Tizimda ishlayotgan Python jarayonlarini topadi
+
+kill -9 <PID>                                                             Kiritilgan PID raqamli jarayonni majburiy to'xtatadi
+
+df -h                                                                     Disk xotirasining bandlik holatini GB/MB larda ko'rsatadi
+
+free -h                                                                   Operativ xotira (RAM) ishlatilish miqdorini ko'rsatadi
+
+
+
+
+--- FAYL HUQUQLARI VA SIQISH (PERMISSIONS, ARCHIVE) ---
+chmod +x script.sh                                                        Faylga ishga tushirish (execute) huquqini beradi
+
+chmod 600 id_rsa                                                          Faylga faqat ega uchun o'qish-yozish huquqini belgilaydi (SSH kalitlar uchun)
+
+tar -cvzf arxiv.tar.gz /path/to/folder                                    Papkani .tar.gz formatida arxivlaydi
+
+tar -xvzf arxiv.tar.gz                                                    .tar.gz arxivini joriy papkaga yozib oladi (extract)
+
+
+
+========================================================================================================================
+BUYRUQ / MISOL                                                            VAZIFASI / TAVSIFI
+========================================================================================================================
+
+
+
+--- MATN VA OʻZGARUVCHILARNI EKRANGA CHIQARISH ---
+
+echo "Salom Dunyo"                                                         Ekranga oddiy "Salom Dunyo" matnini chiqaradi
+
+echo $USER                                                                Hozirgi tizim foydalanuvchisining nomini chiqaradi
+
+echo $PATH                                                                Tizimdagi buyruqlar qidiriladigan yo'llarni (PATH) ko'rsatadi
+
+
+
+
+--- FAYLLARGA YOZISH VA QOʻSHISH ---
+
+echo "Yangi matn" > fayl.txt                                               Fayl ichidagilarni o'chirib, o'rniga "Yangi matn"ni yozadi
+
+echo "Qo'shimcha qator" >> fayl.txt                                        Faylning oxirgi qatoriga yangi matnni qo'shadi
+
+
+
+
+--- MAXSUS BAYROQLAR (FLAGS) ---
+echo -e "Birinchi qator\nIkkinchi qator"                                   -e bayrog'i \n (yangi qator) va \t (tabulyatsiya) kabi maxsus belgilarni ishlatishga ruxsat beradi
+
+echo -n "Matn"                                                            Matn oxiridagi yangi qatordan boshlash (newline) belgisini olib tashlaydi
+
+		

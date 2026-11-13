@@ -1,0 +1,301 @@
+KRIPTOLOGIYA 
+1)
+Kodlangan Matn
+Kriptografiya
+50 ball
+First blood: sardor
+· 2026 M07 22
+
+Quyidagi kodlangan ma'lumotni o'qing:
+
+Nusxa
+46414c434f4e7b6865785f325f746578747d
+FALCON{hex_2_text}
+https://gchq.github.io/CyberChef/     saytdan yechilgan 16lik yani Hexadecimal dan textga otkazilgan
+Hex → Text:	echo "46414c434f4e7b6865785f325f746578747d" | xxd -r -p KALI Command
+
+
+2)
+Signallar
+Kriptografiya
+50 ball
+First blood: sardor
+· 2026 M07 21
+
+Quyidagi belgilar ketma-ketligida yashiringan xabarni o'qing:
+
+Nusxa
+-- --- .-. ... . .. ... . .- ... -.--
+FALCON{morseiseasy}
+https://cryptii.com/pipes/atbash-cipher/     saytdan yechilgan morse kod text korinishiga otkazilgan
+Morse → Text:
+
+echo "-- --- .-. ... . .. ... . .- ... -.--" | python3 -c 'import sys; m={".-":"A","-...":"B","-.-.":"C","-..":"D",".":"E","..-.":"F","--.":"G","....":"H","..":"I",".---":"J","-.-":"K",".-..":"L","--":"M","-.":"N","---":"O",".--.":"P","--.-":"Q",".-.":"R","...":"S","-":"T","..-":"U","...-":"V",".--":"W","-..-":"X","-.--":"Y","--..":"Z","-----":"0",".----":"1","..---":"2","...--":"3","....-":"4",".....":"5","-....":"6","--...":"7","---..":"8","----.":"9"}; print(" ".join("".join(m.get(x,"?") for x in w.split()) for w in sys.stdin.read().strip().split("/")))'     KALI command
+
+
+
+
+3)
+Izohsiz Iz
+Kriptografiya
+50 ball
+First blood: sardor
+· 2026 M07 21
+
+Quyidagi qiymat ortida bir so'z yashiringan:
+
+Nusxa
+0571749e2ac330a7455809c6b0e7af90
+FALCON{sunshine}
+https://crackstation.net/  saytidan yechiulgi , berilgan qiymat MD5 algaritmida heshlangan shu sababli hesh qiymatni olib uni saytdan wordlistdan tekshirib kordim 
+
+
+4)
+Qatlamli Xabar
+Kriptografiya
+50 ball
+First blood: sardor
+· 2026 M07 21
+
+Quyidagi matn ichiga toza bayroq yashiringan. Uni topib oling:
+
+Nusxa
+VW10R1RWRXdPVTlsTWtrd1kzcE9aazVxVW1abFJFNDU=
+FALCON{b4s3_64_x3}
+https://gchq.github.io/CyberChef/ 	saytidan yechildi , base 64 orqali 3 marta deshifrlash bajarildi.
+
+ echo "VW10R1RWRXdPVTlsTWtrd1kzcE9aazVxVW1abFJFNDU=" | base64 -d
+UmtGTVEwOU9lMkkwY3pOZk5qUmZlRE45                                                                                                                      
+┌──(kali㉿kali)-[~]
+└─$ echo "UmtGTVEwOU9lMkkwY3pOZk5qUmZlRE45" | base64 -d 
+RkFMQ09Oe2I0czNfNjRfeDN9                                                                             
+┌──(kali㉿kali)-[~]
+└─$ echo "RkFMQ09Oe2I0czNfNjRfeDN9" | base64 -d
+FALCON{b4s3_64_x3}                   
+
+
+5)
+Qadimgi Rim sarkardasi Yuliy Sezar maxfiy xabarlarini o'ziga xos usulda shifrlagan.
+
+Quyidagi shifrlangan matnni o'qing va bayroqni toping:
+
+Nusxa
+SNYPBA{p43f4e_e0g_13}
+FALCON{c43s4r_r0t_13}
+https://cryptii.com/pipes/atbash-cipher/ 	saytidan yechildi sezar shirfi yordamida 13 birlik siljigan ekan
+
+
+6)
+Ko'zgu Shifri
+Kriptografiya
+75 ball
+First blood: cyra
+· 2026 M07 16
+
+Quyidagi shifrlangan matn ortidagi bayroqni tiklang:
+
+Nusxa
+UZOXLM{zgyzhs_nriili}
+FALCON{atbash_mirror}
+https://gchq.github.io/CyberChef/#recipe=Atbash_Cipher()&input=VVpPWExNe3pneXpoc19ucmlpbGl9DQo&ieol=CRLF&oeol=CRLF    saytdan yechildi , atbash yani kozgu shifrlash usulidan foydalanildi (1->26  26->1 almashadigan)
+
+
+7)
+Nol va Birlar
+Kriptografiya
+75 ball
+First blood: user__
+· 2026 M07 22
+
+Quyidagi ma'lumot ortidagi xabarni o'qing:
+
+Nusxa
+01000110 01000001 01001100 01000011 01001111 01001110 01111011 01100010 00110001 01101110 00110100 01110010 01111001 01011111 00110001 00110001 00110001 01111101
+FALCON{b1n4ry_111}
+https://gchq.github.io/CyberChef/ 		saytidan yechildi , binary malumot text farmatiga ogirildi
+echo "01000110 01000001 01001100 01000011 01001111 01001110 01111011 01100010 00110001 01101110 00110100 01110010 01111001 01011111 00110001 00110001 00110001 01111101" | python3 -c 'import sys; print("".join(chr(int(x,2)) for x in sys.stdin.read().split()))'
+
+
+8)
+Almashtirilgan Harflar
+Kriptografiya
+100 ball
+First blood: test777
+· 2026 M08 01
+
+Quyidagi ingliz tilidagi matnda har bir harf boshqasi bilan almashtirilgan. Matn ichiga FALCON{...} ko'rinishidagi bayroq yashiringan - uni toping:
+
+Nusxa
+of eknhzgukqhin q lxwlzozxzogf eohitk kthsqetl tctkn stzztk vozi qfgzitk stzztk xlofu q yobtr ltektz qshiqwtz wxz zit dglz egddgf stzztkl gy tfusoli lxei ql t z q g qfr f lzoss qhhtqk dglz gyztf lg q eqktyxs qzzqeatk eqf wktqa oz vozigxz qfn atn zit ysqu ygk ziol eiqsstfut ol YQSEGF{yktjxtfen_vofl} uggr sxea qfr iqct yxf
+FALCON{frequency_wins}
+
+https://quipqiup.com/   saytidan yechildi , Substitution Cipher (Almashtirish shifri), aniqroq qilib aytganda Monoalphabetic Substitution Cipher (Bir alifboli almashtirish shifri)
+
+
+9)
+Sirli Baytlar
+Kriptografiya
+100 ball
+First blood: test777
+· 2026 M08 01
+
+Quyida shifrlangan ma'lumot hex ko'rinishida berilgan:
+
+Nusxa
+04030e010d0c393a72301d3573362a1d29273b3f
+FALCON{x0r_w1th_key}
+
+https://gchq.github.io/CyberChef/#recipe=From_Hex('Auto')XOR(%7B'option':'Latin1','string':'B'%7D,'Standard',false)&input=MDQwMzBlMDEwZDBjMzkzYTcyMzAxZDM1NzMzNjJhMWQyOTI3M2IzZg0K&ieol=CRLF&oeol=FF 			shu saytdan yechildi asosiy mazmun MATN=FALCON{   keyin shifrlangan matn bor  matnning davomini topsih kerak , buning uchun kalit topshimiz kerak. MATN +(XOR) KALIT= SHIFR MATN    demak KALIT=MATN +(XOR) SHIFR MATN . berilgan qiymatlar ascii jadvalidan hex ga keyin binary ga otkazilib xor qilinadi chiqqan natija kalit hisoblanadi yani 42(hexda) yoki 66(dec da) B(charda) . endi shifr matn bilan kalit cyberchef da xor qilinsa natija chiqadi.
+
+
+10)
+Kalitli Shifr
+Kriptografiya
+100 ball
+First blood: test777
+· 2026 M08 01
+
+Ushbu xabar maxfiy kalit so'z yordamida shifrlangan.
+
+Shifrlangan matn: KAWECA{airgbrwe_tu_ths}
+FALCON{vigenere_is_fun}
+https://gchq.github.io/CyberChef/#recipe=Vigen%C3%A8re_Decode('FALCON')&input=S0FXRUNBe2FpcmdicndlX3R1X3Roc30  Vigenère shifrlash usuli bunda P+K=C Kni toppish uchun K=C-P, K topilgach P toliq topib olinadi , P qiymat flag boladi. P va K lar bu alfabitdagi harflarning raqam orni 0 dan boshlanadi 25 gacha. 
+
+
+11)
+
+
+
+
+
+
+
+12)
+Maxfiy Hujjat
+Kriptografiya
+250 ball
+First blood: user__
+· 2026 M07 22
+
+Bir korxona maxfiy hujjatni RSA bilan shifrladi va ochiq kalitni hamda shifrmatnni e'lon qildi. Quyidagi ma'lumotdan bayroqni qo'lga kiriting:
+
+Nusxa
+n = 105934255846415837959852606062904042966792834930725511465279538546164489377619444099541749372217661367881071750762935280976486923195457926851532186568770610679164746170846493070887833693802132911361894835582277745332103619796709045426495891777436275825998607792260722976537310456572715336028118620483331661021
+e = 65537
+c =43666740224409819792361845957370766158350677054037659630214813817109794307800172434170532519768972785331737799086449879920228002032628273724836464728088878354158301177909755163529164137389992469594831586630450379732721384893558992543726070954224934146379100879990812222777785019183282941518113613831146769547
+
+FALCON{sm4ll_pr1m3s_t00_cl0s3_f3rm4t_w1ns}
+https://www.dcode.fr/rsa-cipher		Skript orqali buzildi 
+--------ISHLASH MEXANIZMI-----------
+Sizning topshirig'ingiz
+n = 3127
+e = 2011
+c = 2973
+
+Vazifa: shu qiymatlardan m (ochiq matn)ni toping. (Oxirida m — bitta ASCII harfga teng chiqadi, o'zingiz tekshirib ko'rasiz.)
+
+1-QADAM: Fermat faktorizatsiyasi — n ni p × q ga ajratish
+
+Formula: a = ⌈√n⌉ dan boshlang, b² = a² − n ni tekshiring — agar b butun son bo'lsa, tamom. a=(q+p)/2  , b=(q-p)/2
+
+√3127 ≈ 55.9   →   a = 56 dan boshlaymiz agar chiqmasa 57,58,59 ...
+
+a² = 56² = 3136
+b² = 3136 − 3127 = 9
+b = √9 = 3    (butun son chiqdi — birinchi urinishdayoq!)
+
+Natija:
+
+p = a − b = 56 − 3 = 53
+q = a + b = 56 + 3 = 59
+
+(Tekshiring: 53 × 59 = 3127 ✓)
+
+2-QADAM: Eyler funksiyasi φ(n) ni hisoblash
+φ(n) = (p−1)(q−1) = 52 × 58 = 3016
+
+3-QADAM: Yopiq eksponent d ni topish (Kengaytirilgan Evklid algoritmi)
+d=(φ(n)*m+1)/e     m=1,2,3,4, butun sonlar yani m ning butun qiymatlarida d ning birinchi butun sonini tpish kerak boladi
+
+Demak d=3
+4-QADAM: Xabarni ochish — m = c^d mod n
+
+d = 3 bo'lgani uchun bu shunchaki kub olish:
+
+m = 2973³ mod 3127
+
+(Bo'lish:to'g'ri qoldiq 72 bo'lishi kerak)
+
+5-QADAM: Natijani tekshirish
+m = 72
+ASCII jadvalida 72 — bu harf H ✅
+----------------------------------------------
+
+
+13)
+Egri Chiziq
+Kriptografiya
+300 ball
+First blood: superadmin
+· 2026 M08 07
+
+Elliptik egri chiziqqa asoslangan tizim maxfiy skalyar kalit n bilan bayroqni shifrladi (y^2 = x^3 + ax + b mod p, va P = nG) hamda barcha ochiq parametrlarni e'lon qildi. Maxfiy kalitni toping va bayroqni oching:
+
+Nusxa
+p = 2393279617
+a = 205311722
+b = 1668021019
+G = (235022692, 1987849435)
+P = (1102848719, 1337533759)
+iv = 000102030405060708090a0b0c0d0e0f
+ct = b3ca443d8b6f176eafcb1079dbf8a9e623563365a0c7007bbae5b0e02acfc130d5fc90cd08168c30b8d5d42d0172d294
+
+FALCON{w34k_curv3_sm4ll_f13ld_3cdlp}
+
+
+
+
+14)
+
+
+
+
+
+
+15)
+Ushlangan Aloqa
+Kriptografiya
+300 ball
+First blood: bekzod_tursunov
+· 29 kun oldin
+
+Ikki tomon ochiq kanal ustidan umumiy kalit kelishib olishdi, so'ng maxfiy xabarni shifrlab jo'natishdi. Siz butun aloqani boshidan oxirigacha ushlab oldingiz. Yozib olingan maxfiy xabarni oching:
+
+Nusxa
+p = 943235793551918963555190699445674758552875530546325067186507184980377102854315467
+g = 2
+A = 672094918016187239935482494922779280463568341914294778922504134451547955927106576
+B = 229864426971840856856051805791976096555515706125420053880326226890275087755318104
+iv = 000102030405060708090a0b0c0d0e0f
+ct = c197aa92709fa0b533e5975e5511e70d5e83ad60f512019cfbd2017aceb25a1464676d0f0e4ffa9983a9e3aab13eff9e
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
