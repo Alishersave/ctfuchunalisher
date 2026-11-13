@@ -1,0 +1,188 @@
+1)
+Easy
+Forensics
+Bruteforce
+1 sen 2025
+Ball
++100
+Sizdan RDP bruteforce hujumiga oid loglarni tahlil qilish talab etiladi.
+Tizim administratorlari Windows Security Event log faylida ko‘plab Audit Failure (kirish muvaffaqiyatsiz) voqealarini aniqlashgan. Ushbu loglarni tahlil qilib, quyidagi savollarga javob topishingiz kerak bo‘ladi.
+
+Audit Failure voqealari soni nechta?
+Hujumni amalga oshirgan manba IP-manzil qanday?
+Mazkur IP manzil qaysi davlatga tegishli?
+Flag formati : HackNow{34213_172.10.20.30_Uzbekistan}	
+
+HackNow{3103_113.161.192.227_Vietnam}  4625 soni aniqlandi va ip manzil orqali davlat aniqlanadi.
+
+
+
+2)
+Easy
+Forensics
+Insider xodim
+25 noy 2025
+Ball
++100
+Ichkariga kirib ma'lumot o'g'irlashga uringan xodim tizimdagi ba'zi filelarni o'chirib tashladi ammo hammasini ham emas. Raqamli Kriminalistika xodimlari esa sizga bergan disk imagedan foydalangan holatda flagni topishingiz kerak.
+
+Format: HackNow{}
+Hint: Insider oldindan Cryptography va computer scienceni tushinib mashina tilida nimalardir qilgan. There are several ways to break it :)
+
+
+
+
+
+
+
+3)
+Easy
+Forensics
+Qirolicha jurnali
+20 dek 2025
+Ball
++150
+Tavsif
+Bir bor ekan bir yo'q ekan qadim qadim zamonda bir Rootkit qirolligi bo'lgan ekan. U qirollikda hamma baxtli yashashar ekan. ularning shiori : Hack -> Sleep -> Eat -> Hack.
+Qirollikni yakkayu-yolg'iz qirolicha boshqarar ekan. Qirolicha har kuni o'zi nimalar qilganinini write qilib borar ekan va u bir kuni jurnalini stol ustida qoldirib ketibti. va u tezda o'g'irlanibti lekin eshitlar yopiqligi sabab o'g'ri chiqolmagan ekan, ammo u uni shiflay olgan. Sizning vazifangiz qirolicha qo'lyozasidan sirli bayroqni bilish.
+
+Format: HackNow{}
+
+Yuklamalar
+queen_hacked.img
+
+HackNow{royal_journal_magic}		rasm string faylga otkazildi va ichidan HackNow qidirildi.
+
+
+
+
+
+
+4)
+Easy
+Forensics
+Yashirilgan sir
+20 dek 2025
+Ball
++100
+
+HackNow{specter_shadows}	flag shunchaki fayl Ichida va oq rangli harflarda yozilgan ekan.
+
+
+
+5)
+
+Easy
+Forensics
+AAA Framework: Log Forensics Challenge
+1 may 2026
+Ball
++100
+HN{103.235.47.92_deploy_198.51.100.77}
+
+
+
+
+6)
+Easy
+Forensics
+CIA & AAA: Incident Log Analysis
+1 may 2026
+Ball
++100
+
+HN{185.143.223.47_admin_full_dump.sql}
+
+
+7)
+
+
+
+
+8)
+Easy
+Forensics
+User Forensics
+25 apr 2026
+Ball
++90
+
+HN{sysupdate}    HN{hacker}  	HN{/tmp/.hidden}	HN{vim}		HN{:!/bin/bash}		HN{5}
+
+
+
+
+9)
+
+
+HN{evil.com}	HN{93.184.216.34}	HN{P@ssw0rd123}		HN{abc123}
+
+
+
+
+
+
+
+
+
+
+
+
+
+Medium
+Forensics
+Yechilgan
+Security Policies: Incident Response
+1 may 2026
+Ball
++150
+
+HN{45_sysbackup_49}
+
+
+
+
+Medium
+Forensics
+Yechilgan
+The-Cache-Whisperer
+20 dek 2025
+Ball
++150
+HackNow{adoiusjh_dw1w453_UJA_d2}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

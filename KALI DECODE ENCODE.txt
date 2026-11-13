@@ -1,0 +1,43 @@
+2-lik (Binary)
+
+Binary → Text:	echo "01101000 01100001 01101001" | python3 -c 'import sys; print("".join(chr(int(x,2)) for x in sys.stdin.read().split()))'
+Text → Binary:	echo -n "haiCTF" | python3 -c 'import sys; print(" ".join(format(ord(x),"08b") for x in sys.stdin.read()))'
+
+
+8-lik (Octal)
+
+Octal → Text:	echo "150 141 151" | python3 -c 'import sys; print("".join(chr(int(x,8)) for x in sys.stdin.read().split()))'
+Text → Octal:	echo -n "haiCTF" | python3 -c 'import sys; print(" ".join(format(ord(x),"o") for x in sys.stdin.read()))'
+
+
+10-lik (Decimal)
+
+Decimal → Text:	echo "104 97 105" | python3 -c 'import sys; print("".join(chr(int(x)) for x in sys.stdin.read().split()))'
+Text → Decimal:	echo -n "haiCTF" | python3 -c 'import sys; print(" ".join(str(ord(x)) for x in sys.stdin.read()))'
+
+
+16-lik (Hex)
+
+Hex → Text:	echo "686169435446" | xxd -r -p
+Text → Hex:	echo -n "haiCTF" | xxd -p
+
+
+Base64 
+
+Base64 → Text:	echo "aGVsbG8=" | base64 -d
+Text → Base64:	echo -n "hello" | base64
+
+
+Morse
+
+Morse → Text:	echo ".... . .-.. .-.. ---" | sed 's/ /\n/g' | while read x; do case "$x" in "....") printf H;; ".") printf E;; ".-..") printf L;; "---") printf O;; esac; done; echo
+
+
+Sha256 shifrlash
+echo -n "hacknow" | sha256sum
+
+
+
+A:0, B:1, C:2, D:3, E:4, F:5, G:6, H:7, I:8, J:9, K:10, L:11, M:12, N:13, O:14, P:15, Q:16, R:17, S:18, T:19, U:20, V:21, W:22, X:23, Y:24, Z:25
+
+

@@ -1,0 +1,75 @@
+STENOGRAFIYA
+
+1)
+Sokin Kun
+Steganografiya
+100 ball
+First blood: nurs
+· 13 kun oldin
+
+Oddiy bir manzara surati. Undan boshqa hech narsa so'ralmagan edi. Rostdanmi? Flag: FALCON{...}
+
+2a18f285-ST-01_sirli-piksel.zip
+
+
+
+
+
+2)
+
+
+
+3)
+Galereya
+Steganografiya
+300 ball
+First blood: bekzod_tursunov
+· 27 kun oldin
+
+Sakkiz kadr, deyarli bir xil. Ularni birga tahlil qil. Flag: FALCON{...}
+
+ad2ded7b-ST-07_qaysi-biri.zip
+
+FALCON{ch1_squ4r3_g1v3s_1t_4w4y}
+
+https://www.aperisolve.com/d0124ff396cf5d0091457e52b46996f7#google_vignette    		saytidan yechildi eng past 131 baytli rasm ichidagi text faylga yashirilgan ekan
+
+
+4)
+Yakuniy Kadr
+Steganografiya
+300 ball
+First blood: bekzod_tursunov
+· 27 kun oldin
+
+Oddiy bir "THE END" kartasi. Faylni ochib ko'r. Flag: FALCON{...}
+
+c4b2d8bc-ST-05_yashirin-bolak.zip
+
+
+
+
+FALCON{p4st_th3_1end_m4rk3r}    rasmni string ga otkazganda IEND degan qismi bor bu rasm stringi tugadi degan manoni anglatarkan undan keying qiymat 	tstEGx #td% TCF  shu 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
